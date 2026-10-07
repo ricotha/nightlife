@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nightlife — Nightlife, simplified</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">NIGHT<span class="logo-accent">LIFE</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Discover</a></li>
+      <li><a href="#venues" class="nav-link">Venues</a></li>
+      <li><a href="#plan" class="nav-link">Saved</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn btn-primary">Open presentation</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-frame">
+      <div class="hero-panel">
+        <div class="skyline-bg" aria-hidden="true">
+          <svg viewBox="0 0 1180 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#0a0d15">
+              <rect x="0" y="140" width="60" height="120"/>
+              <rect x="70" y="90" width="40" height="170"/>
+              <rect x="120" y="160" width="55" height="100"/>
+              <rect x="185" y="60" width="34" height="200"/>
+              <rect x="230" y="120" width="70" height="140"/>
+              <rect x="310" y="30" width="26" height="230"/>
+              <rect x="345" y="150" width="60" height="110"/>
+              <rect x="415" y="80" width="42" height="180"/>
+              <rect x="465" y="10" width="30" height="250"/>
+              <rect x="505" y="130" width="65" height="130"/>
+              <rect x="580" y="60" width="38" height="200"/>
+              <rect x="628" y="150" width="55" height="110"/>
+              <rect x="690" y="95" width="44" height="165"/>
+              <rect x="745" y="20" width="28" height="240"/>
+              <rect x="785" y="140" width="60" height="120"/>
+              <rect x="855" y="70" width="40" height="190"/>
+              <rect x="905" y="160" width="70" height="100"/>
+              <rect x="985" y="40" width="30" height="220"/>
+              <rect x="1025" y="130" width="55" height="130"/>
+              <rect x="1090" y="90" width="45" height="170"/>
+              <rect x="1145" y="150" width="35" height="110"/>
+            </g>
+            <g fill="#e0a75c" opacity=".55">
+              <rect x="14" y="160" width="6" height="8"/><rect x="30" y="185" width="6" height="8"/>
+              <rect x="82" y="115" width="6" height="8"/><rect x="82" y="150" width="6" height="8"/>
+              <rect x="325" y="60" width="6" height="8"/><rect x="325" y="95" width="6" height="8"/>
+              <rect x="476" y="45" width="6" height="8"/><rect x="476" y="90" width="6" height="8"/>
+              <rect x="757" y="55" width="6" height="8"/><rect x="757" y="100" width="6" height="8"/>
+              <rect x="996" y="70" width="6" height="8"/><rect x="996" y="110" width="6" height="8"/>
+            </g>
+          </svg>
+        </div>
+        <div class="hero-content">
+          <span class="eyebrow">Nightlife, simplified</span>
+          <h1 class="hero-title">Your evening, planned with less effort.</h1>
+          <p class="hero-subtitle">Nightlife helps busy professionals discover dependable venues, compare options, and build a clear plan for the night.</p>
+
+          <div class="search-card">
+            <div class="search-row">
+              <div class="search-input">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+                <input type="text" placeholder="Search a venue or city" id="searchInput">
+              </div>
+              <button class="btn btn-primary" id="searchBtn">Search</button>
+            </div>
+            <div class="pill-row" id="pillRow">
+              <button class="pill">Rooftop</button>
+              <button class="pill">Cocktails</button>
+              <button class="pill">Live music</button>
+              <button class="pill">Dining</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <!-- THEME -->
+    <div class="theme-bar">
+      <span class="theme-label">Theme</span>
+      <div class="theme-toggle">
+        <button class="theme-btn" id="lightBtn">☀ Light mode</button>
+        <button class="theme-btn active" id="darkBtn">☾ Dark mode</button>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="features">
+      <div class="feature">
+        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/></svg>
+        <h3>Curated venues</h3>
+        <p>A focused shortlist instead of endless searching.</p>
+      </div>
+      <div class="feature">
+        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8.5"/><path d="M12 8v4l3 2"/></svg>
+        <h3>Quick decisions</h3>
+        <p>Clear venue details at the moment they matter.</p>
+      </div>
+      <div class="feature">
+        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="7" r="2.2"/><circle cx="18" cy="7" r="2.2"/><circle cx="12" cy="18" r="2.2"/><path d="M7.6 8.6 10.6 16M16.4 8.6 13.4 16"/></svg>
+        <h3>Tonight's Plan</h3>
+        <p>Keep the evening coordinated from one simple view.</p>
+      </div>
+    </div>
+
+    <!-- VENUES -->
+    <section class="venues" id="venues">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow2" style="color:var(--gold); font-size:.75rem; font-weight:700; letter-spacing:.1em;">Curated for tonight</span>
+          <h2>Find a place worth your time</h2>
+        </div>
+        <span class="count-chip">4 venues available</span>
+      </div>
+      <div class="venue-grid" id="venueGrid"></div>
+    </section>
+
+    <!-- PLAN + PREVIEW -->
+    <section class="split" id="plan">
+      <div class="card">
+        <div class="head-row">
+          <div>
+            <span class="eyebrow2">A simple evening</span>
+            <h2>Tonight's Plan</h2>
+          </div>
+          <div class="pin">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          </div>
+        </div>
+        <div class="plan-list" id="planList">
+          <p class="plan-empty">Add a venue below to start building tonight's plan.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="head-row">
+          <div>
+            <span class="eyebrow2">Prototype preview</span>
+            <h2>Designed for web and mobile</h2>
+          </div>
+          <div class="tabs">
+            <button class="tab active" data-tab="web">Web</button>
+            <button class="tab" data-tab="mobile">Mobile</button>
+          </div>
+        </div>
+        <div class="preview-box" id="previewBox">
+          <span class="eyebrow3">Desktop flow</span>
+          <h3>Shortlist, compare, and plan</h3>
+          <p>A clear path from discovery to an organized evening plan.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>© 2026 Nightlife · A concept for evening planning</footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
